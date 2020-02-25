@@ -3,15 +3,35 @@
 
         <div class="co-app-header__wrapper">
 
-            <div class="co-app-header__profile-image"></div>
+            <div class="co-app-header__profile-image-wrapper">
+                <div class="co-app-header__profile-image"></div>
+            </div>
 
-            <h1 class="co-app-header__title u-a1">< Domagoj Svjetličić /></h1>
+            <h1
+                class="co-app-header__title u-a1"
+                :class="{'rotate': rotateTitle}"
+            >
+                < Domagoj Svjetličić />
+            </h1>
 
             <h5 class="co-app-header__info u-a3">
                 {{title}}
+                <span
+                    class="co-app-header__blinker"
+                    v-if="blinkerShow"
+                    :class="{'is-visible': blinkerToggle}"
+                >
+                    |
+                </span>
             </h5>
 
             <ArrowDownIcon class="co-app-header__arrow gsap-arrow"/>
+
+            <div class="co-app-header__social-icons-wrapper">
+                <a class="co-app-header__social-link">
+                    <fa class="co-app-header__social-icon" :icon="['fab', 'linkedin']"></fa>
+                </a>
+            </div>
 
         </div>
 
@@ -29,7 +49,10 @@
     })
     export default class AppHeader extends Vue {
         public title: string = ``;
-        private titleForTimeout = `Front-end / JavaScript / Vue.js Developer...`;
+        public blinkerShow: boolean = false;
+        public blinkerToggle: boolean = false;
+        public rotateTitle: boolean = false;
+        private titleForTimeout = `Front-end / JavaScript / Vue.js Developer`;
 
         public titleTimeoutSet() {
             const titleForTimeoutLength: number = this.titleForTimeout.length;
@@ -41,6 +64,9 @@
 
                 if (index >= this.titleForTimeout.length) {
                     clearInterval(interval);
+                    this.blinkerShow = true;
+                    this.rotateTitle = true;
+                    this.startBlinkerToggle();
                 }
             }, 100);
         }
@@ -53,8 +79,16 @@
             tl.to('.gsap-arrow', {y: 0, duration: 1});
         }
 
+        private startBlinkerToggle() {
+            setInterval(() => {
+                this.blinkerToggle = !this.blinkerToggle;
+            }, 350);
+        }
+
         private mounted(): void {
-            this.titleTimeoutSet();
+            setTimeout(() => {
+                this.titleTimeoutSet();
+            }, 1000);
             this.animateHeaderDom();
         }
     }
@@ -74,28 +108,89 @@
             margin: auto;
         }
 
-        &__profile-image {
-            background-image: url("https://keenthemes.com/preview/metronic/theme/assets/pages/media/profile/profile_user.jpg");
-            width: 220px;
-            height: 220px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
+        &__profile-image-wrapper {
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             margin: 0 auto 50px;
             box-shadow: 0 0 22px 0 rgba(255, 255, 255, 1);
             border: 1px solid $white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        &__profile-image {
+            background-image: url("../assets/images/profile-image.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: transform .4s ease-in;
+            position: relative;
+
+            &:hover {
+                transform: scale(1.3);
+
+                &:after {
+                    top: 0;
+                    opacity: .3;
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $orange;
+                opacity: 0;
+                transition: all .5s ease-in;
+                border-radius: 50%;
+            }
         }
 
         &__title {
             font-family: 'Kaushan Script', sans-serif;
             color: $white;
-            transform: rotate(-10deg);
             padding-bottom: 120px;
+            transition: transform .3s ease-in-out;
+
+            &.rotate {
+                transform: rotate(-10deg);
+            }
         }
 
         &__info {
             padding-bottom: 30px;
+        }
+
+        &__blinker {
+            visibility: hidden;
+
+            &.is-visible {
+                visibility: visible;
+            }
+        }
+
+        &__social-icons-wrapper {
+            margin-top: 50px;
+        }
+
+        &__social-link {
+            display: inline-block;
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__social-icon {
+            font-size: 35px;
+            color: $blue-linkedin;
         }
     }
 </style>
