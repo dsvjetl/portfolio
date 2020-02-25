@@ -28,7 +28,7 @@
             <ArrowDownIcon class="co-app-header__arrow gsap-arrow"/>
 
             <div class="co-app-header__social-icons-wrapper">
-                <a class="co-app-header__social-link">
+                <a href="https://www.linkedin.com/in/dsvjetl" target="_blank" class="co-app-header__social-link">
                     <fa class="co-app-header__social-icon" :icon="['fab', 'linkedin']"></fa>
                 </a>
             </div>
@@ -96,13 +96,13 @@
 
 <style lang="scss" scoped>
     .co-app-header {
-        width: 100%;
-        height: 100vh;
+        $root: &;
+
         background-color: $orange;
         position: relative;
         text-align: center;
-        padding: 50px 0;
         display: flex;
+        padding: 50px 0 50px;
 
         &__wrapper {
             margin: auto;
@@ -130,7 +130,7 @@
             position: relative;
 
             &:hover {
-                transform: scale(1.3);
+                transform: scale(1.1);
 
                 &:after {
                     top: 0;
@@ -190,7 +190,12 @@
 
         &__social-icon {
             font-size: 35px;
-            color: $blue-linkedin;
+            color: $white;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $blue-linkedin;
+            }
         }
     }
 </style>

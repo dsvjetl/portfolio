@@ -1,6 +1,6 @@
 <template>
     <div class="co-app">
-        <AppHeader/>
+        <router-view/>
     </div>
 </template>
 
