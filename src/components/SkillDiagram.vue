@@ -17,12 +17,12 @@
 
         private mounted() {
             var data = [{
-                data: [50, 55],
-                labels: ['India', 'China'],
+                data: [25, 75],
+                labels: ['skill', 'blank'],
                 backgroundColor: [
-                    '#4b77a9',
+                    '#fb8807',
+                    'transparent'
                 ],
-                borderColor: 'green'
             }];
 
             // @ts-ignore
@@ -35,7 +35,15 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                }
+                    tooltips: {
+                        enabled: false
+                    },
+                    elements: {
+                        arc: {
+                            borderWidth: 0,
+                        },
+                    },
+                },
             });
         }
     }
