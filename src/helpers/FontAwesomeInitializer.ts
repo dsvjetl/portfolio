@@ -1,5 +1,5 @@
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faUserSecret} from '@fortawesome/free-solid-svg-icons';
+import {faUserSecret, faBriefcase, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 import {VueConstructor} from 'vue';
@@ -16,6 +16,8 @@ export class FontAwesomeInitializer {
     private initializeIcons() {
         library.add(faUserSecret);
         library.add(faLinkedin);
+        library.add(faBriefcase);
+        library.add(faGraduationCap);
 
         this.vue.component('fa', FontAwesomeIcon);
     }

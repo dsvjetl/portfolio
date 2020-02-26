@@ -14,7 +14,7 @@
     })
     export default class AppLink extends Vue {
         @Prop({required: true}) public content!: string;
-        @Prop({required: true}) public href!: string;
+        @Prop({default: ''}) public href!: string;
         @Prop({default: '_blank'}) public target!: string;
         @Prop({default: 'primary'}) public mode!: string;
     }

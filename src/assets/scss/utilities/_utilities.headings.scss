@@ -4,10 +4,12 @@
 
 .u-a2 {
     font-size: 30px;
+    font-weight: normal;
 }
 
 .u-a3 {
     font-size: 18px;
+    font-weight: normal;
 }
 
 .u-a4 {
@@ -20,4 +22,8 @@
 
 .u-a1, .u-a2, .u-a3, .u-a4, .u-a5 {
     line-height: 1.3em;
+}
+
+.--bold {
+    font-weight: bold;
 }

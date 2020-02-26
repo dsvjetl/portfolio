@@ -130,11 +130,11 @@
             position: relative;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.2) translateX(8%);
 
                 &:after {
                     top: 0;
-                    opacity: .3;
+                    opacity: .1;
                 }
             }
 
@@ -145,9 +145,9 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: $orange;
+                background-color: $white;
                 opacity: 0;
-                transition: all .5s ease-in;
+                transition: all .3s ease-in;
                 border-radius: 50%;
             }
         }
