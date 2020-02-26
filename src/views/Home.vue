@@ -4,6 +4,7 @@
         <ParticlesBlock/>
         <AboutMe/>
         <MyResume/>
+        <Skills/>
     </div>
 </template>
 
@@ -14,10 +15,11 @@
     import MyResume from '@/components/MyResume.vue';
     import EducationTimeline from '@/components/EducationTimeline.vue';
     import ParticlesBlock from '@/components/ParticlesBlock.vue';
+    import Skills from '@/components/Skills.vue';
 
     @Component({
         name: 'Home',
-        components: {ParticlesBlock, EducationTimeline, MyResume, AboutMe, AppHeader},
+        components: {Skills, ParticlesBlock, EducationTimeline, MyResume, AboutMe, AppHeader},
     })
     export default class Home extends Vue {
 
