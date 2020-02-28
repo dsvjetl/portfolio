@@ -43,7 +43,7 @@
                     },
                     elements: {
                         arc: {
-                            borderWidth: 1,
+                            borderWidth: 0,
                             borderColor: '#fb8807',
                         },
                     },

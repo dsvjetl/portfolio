@@ -76,7 +76,7 @@
 
 <style lang="scss" scoped>
     .co-about-me {
-        padding: 60px 0 50px;
+        padding: 60px 0 80px;
         background-color: $white;
 
         &__title {
@@ -85,7 +85,7 @@
 
         &__content-wrapper {
             padding: 0 percentage(4 / 24);
-            margin: 50px 0;
+            margin: 50px 0 0;
             display: flex;
         }
 

@@ -1,6 +1,6 @@
 <template>
     <div class="co-skills js-skills">
-        <h3 class="co-skills__title u-a2">_Skills</h3>
+        <h3 class="co-skills__title u-a2 --bold">_Skills</h3>
 
         <div class="co-skills__diagrams-wrapper">
             <SkillDiagramWrapper
@@ -59,7 +59,7 @@
 
 <style lang="scss" scoped>
     .co-skills {
-        padding-top: 70px;
+        padding: 80px 0 50px;
 
         &__title {
             text-align: center;
