@@ -7,13 +7,16 @@
 <script lang="ts">
     import {Vue, Component} from 'vue-property-decorator';
     import AppHeader from '@/components/AppHeader.vue';
+    import {ScrollRevealService} from '@/services/ScrollRevealService';
 
     @Component({
         name: 'App',
         components: {AppHeader},
     })
     export default class App extends Vue {
-
+        public mounted(): void {
+            ScrollRevealService.init();
+        }
     }
 </script>
 

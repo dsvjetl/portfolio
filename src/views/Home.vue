@@ -6,6 +6,8 @@
         <MyResume/>
         <Skills/>
         <Work/>
+        <MediumPosts/>
+        <AppFooter/>
     </div>
 </template>
 
@@ -18,10 +20,14 @@
     import ParticlesBlock from '@/components/ParticlesBlock.vue';
     import Skills from '@/components/Skills.vue';
     import Work from '@/components/Work.vue';
+    import MediumPosts from '@/components/MediumPosts.vue';
+    import AppFooter from '@/components/AppFooter.vue';
 
     @Component({
         name: 'Home',
-        components: {Work, Skills, ParticlesBlock, EducationTimeline, MyResume, AboutMe, AppHeader},
+        components: {
+            AppFooter,
+            MediumPosts, Work, Skills, ParticlesBlock, EducationTimeline, MyResume, AboutMe, AppHeader},
     })
     export default class Home extends Vue {
 

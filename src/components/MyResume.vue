@@ -1,7 +1,7 @@
 <template>
     <div class="co-my-resume">
 
-        <h3 class="co-my-resume__title u-a2 u-a2 --bold">_My Resume</h3>
+        <h3 class="co-my-resume__title u-a2 u-a2 --bold">_Resume</h3>
 
         <ResumeTimeline/>
         <EducationTimeline/>

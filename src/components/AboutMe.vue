@@ -9,7 +9,7 @@
 
             <div class="co-about-me__personal-info-wrapper">
 
-                <div class="co-about-me__personal-info-left">
+                <div class="co-about-me__personal-info-left js-scrollreveal-left">
                     <p class="co-about-me__keyname u-a4">_Full name:</p>
                     <p class="co-about-me__keyname u-a4">_Phone:</p>
                     <p class="co-about-me__keyname u-a4">_E-mail:</p>
@@ -17,7 +17,7 @@
                     <p class="co-about-me__keyname u-a4">_City:</p>
                 </div>
 
-                <div class="co-about-me__personal-info-right">
+                <div class="co-about-me__personal-info-right js-scrollreveal-left">
                     <p class="co-about-me__value u-a4">Domagoj Svjetličić</p>
                     <p class="co-about-me__value u-a4"><a href="tel:+385917390936" class="co-about-me__email-link">+385
                         91 739 0936</a></p>
@@ -30,7 +30,7 @@
 
             </div>
 
-            <div class="co-about-me__message-wrapper">
+            <div class="co-about-me__message-wrapper js-scrollreveal-bottom">
 
                 <p class="co-about-me__message-title u-a2">_Hello Reader!</p>
 

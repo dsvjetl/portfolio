@@ -4,37 +4,37 @@
 
         <div class="co-skills__diagrams-wrapper">
             <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper"
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="1"
                 :title="'HTML'"
                 :ratio="[99, 1]"
             />
             <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper"
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="2"
                 :title="'CSS'"
                 :ratio="[89, 11]"
             />
             <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper"
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="3"
                 :title="'JS'"
                 :ratio="[95, 5]"
             />
             <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper"
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="4"
                 :title="'Vue.js'"
                 :ratio="[98, 2]"
             />
             <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper"
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="5"
                 :title="'Node.js'"
                 :ratio="[84, 16]"
             />
             <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper"
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="6"
                 :title="'PHP'"
                 :ratio="[64, 36]"
@@ -75,7 +75,7 @@
 
         &__diagram-wrapper {
             width: 25%;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
     }

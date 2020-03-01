@@ -13,6 +13,7 @@
 
             <div class="co-education-timeline__timeline-block-right">
                 <TimelineBlock
+                    class="js-scrollreveal-bottom"
                     :title="'Multimedia Computer Engineering'"
                     :companyName="'Algebra'"
                     :companyHref="'https://www.algebra.hr/visoko-uciliste'"

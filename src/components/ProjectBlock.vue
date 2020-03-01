@@ -1,9 +1,10 @@
 <template>
     <router-link
-        class="co-project-block"
-        style="background-image: url('https://image.freepik.com/free-vector/abstract-futuristic-background_23-2148399335.jpg')"
+        class="co-project-block js-scrollreveal-bottom"
+        :style="{backgroundImage: 'url(' + require('@/assets/images/' + image) + ')'}"
+
         to="/"
-    >
+        >
         <div class="co-project-block__info-block">
             <h5 class="co-project-block__title u-a3">{{title}}</h5>
             <p class="co-project-block__description u-a5">{{description}}</p>
@@ -18,6 +19,7 @@
         name: 'ProjectBlock',
     })
     export default class ProjectBlock extends Vue {
+        @Prop({required: true}) public image!: string;
         @Prop({required: true}) public title!: string;
         @Prop({required: true}) public description!: string;
     }
@@ -30,11 +32,14 @@
         display: block;
         position: relative;
         text-decoration: none;
-
+        background: no-repeat center center;
+        background-size: cover;
+        transition: all .3s ease-in;
 
         &:hover {
+
             #{$root}__info-block {
-                opacity: .7;
+                opacity: .9;
             }
 
             #{$root}__title {
@@ -52,9 +57,9 @@
             background-color: $white;
             height: 100%;
             width: 100%;
-            padding: 15px;
+            padding: 10px;
             opacity: 0;
-            transition: opacity .3s ease-in-out;
+            transition: all .3s ease-in-out;
             overflow: hidden;
         }
 
@@ -63,6 +68,7 @@
             text-decoration: none;
             transition: all .4s ease-in-out;
             opacity: 0;
+            display: block;
         }
 
         &__title {

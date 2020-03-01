@@ -9,6 +9,7 @@
 
             <div class="co-resume-timeline__timeline-block-left">
                 <TimelineBlock
+                    class="js-scrollreveal-left"
                     :title="'Front-end Development Intern'"
                     :companyName="'Degordian'"
                     :companyHref="'https://www.degordian.com'"
@@ -16,6 +17,7 @@
                 />
                 <div class="co-resume-timeline__empty-space"></div>
                 <TimelineBlock
+                    class="js-scrollreveal-left"
                     :title="'Front-end Developer'"
                     :companyName="'Bornfight'"
                     :companyHref="'https://www.bornfight.com'"
@@ -26,6 +28,7 @@
             <div class="co-resume-timeline__timeline-block-right">
                 <div class="co-resume-timeline__empty-space"></div>
                 <TimelineBlock
+                    class="js-scrollreveal-bottom"
                     :title="'Front-end Developer'"
                     :companyName="'Degordian'"
                     :companyHref="'https://www.degordian.com'"
