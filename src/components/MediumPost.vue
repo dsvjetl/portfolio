@@ -60,5 +60,9 @@
             color: $orange;
         }
 
+        &__description {
+            color: $gray-message;
+        }
+
     }
 </style>
