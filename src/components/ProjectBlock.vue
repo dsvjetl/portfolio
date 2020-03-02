@@ -2,8 +2,7 @@
     <router-link
         class="co-project-block js-scrollreveal-bottom"
         :style="{backgroundImage: 'url(' + require('@/assets/images/' + image) + ')'}"
-
-        to="/"
+        :to="path"
         >
         <div class="co-project-block__info-block">
             <h5 class="co-project-block__title u-a3">{{title}}</h5>
@@ -22,6 +21,7 @@
         @Prop({required: true}) public image!: string;
         @Prop({required: true}) public title!: string;
         @Prop({required: true}) public description!: string;
+        @Prop({default: '/'}) public path!: string;
     }
 </script>
 

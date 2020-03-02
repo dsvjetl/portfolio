@@ -1,9 +1,9 @@
 <template>
-    <div class="co-app-footer">
+    <footer class="co-app-footer">
         <p class="co-app-footer__copyrights u-a5">
             © 2020 <AppLink :content="'Domagoj Svjetličić'" :href="'https://www.linkedin.com/in/dsvjetl'"/>. All Rights Reserved.
         </p>
-    </div>
+    </footer>
 </template>
 
 <script lang="ts">
@@ -25,5 +25,6 @@
         border-top: 1px solid $orange;
         padding: 10px 5px;
         text-align: center;
+        max-height: 39px;
     }
 </style>

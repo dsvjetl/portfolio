@@ -7,11 +7,12 @@
         <div class="co-work__wrapper">
             <ProjectBlock
                 class="co-work__project-block"
-                v-for="backgroundImage in backgroundImages"
-                :key="backgroundImage.image"
-                :image="backgroundImage.image"
-                :title="backgroundImage.title"
-                :description="backgroundImage.description"
+                v-for="project in projects"
+                :key="project.image"
+                :image="project.image"
+                :title="project.title"
+                :description="project.description"
+                :path="project.path"
             />
         </div>
     </div>
@@ -20,19 +21,44 @@
 <script lang="ts">
     import {Vue, Component} from 'vue-property-decorator';
     import ProjectBlock from '@/components/ProjectBlock.vue';
-    import {BackgroundImage} from '@/interfaces/BackgroundImage';
+    import {ProjectWork} from '@/interfaces/ProjectWork';
 
     @Component({
         name: 'Work',
         components: {ProjectBlock},
     })
     export default class Work extends Vue {
-        public backgroundImages: BackgroundImage[] = [
-            {image: 'kuwait-4.jpg', title: 'Al-Salem Cultural Centre', description: '30 interactive applications for the biggest museum in the world.'},
-            {image: 'zuja-2.jpg', title: 'Ožujsko', description: 'Websites for Ožujsko.'},
-            {image: 'eotg-screens.jpg', title: 'Eye on the goal', description: 'School improvement system.'},
-            {image: 'fraud-official.jpg', title: 'Mercury processing services', description: 'Fraud management platform.'},
-            {image: 'vremenco.jpg', title: 'vremen.co', description: 'Task tracking tool.'},
+        public projects: ProjectWork[] = [
+            {
+                image: 'kuwait-4.jpg',
+                title: 'Al-Salem Cultural Centre',
+                description: '30 interactive applications for the biggest museum in the world.',
+                path: 'project/al-salem-cultural-centre',
+            },
+            {
+                image: 'zuja-2.jpg',
+                title: 'Ožujsko',
+                description: 'Websites for Ožujsko.',
+                path: '/',
+            },
+            {
+                image: 'eotg-screens.jpg',
+                title: 'Eye on the goal',
+                description: 'School improvement system.',
+                path: '/',
+            },
+            {
+                image: 'fraud-official.jpg',
+                title: 'Mercury processing services',
+                description: 'Fraud management platform.',
+                path: '/',
+            },
+            {
+                image: 'vremenco.jpg',
+                title: 'vremen.co',
+                description: 'Task tracking tool.',
+                path: '/',
+            },
         ];
     }
 </script>
