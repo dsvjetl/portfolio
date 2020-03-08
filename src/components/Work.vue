@@ -32,32 +32,32 @@
             {
                 image: 'kuwait-4.jpg',
                 title: 'Al-Salem Cultural Centre',
-                description: '30 interactive applications for the biggest museum in the world.',
-                path: 'project/al-salem-cultural-centre',
+                description: '33 interactive applications for the biggest museum in the world.',
+                path: '/projects/al-salem-cultural-centre',
             },
             {
                 image: 'zuja-2.jpg',
                 title: 'Ožujsko',
                 description: 'Websites for Ožujsko.',
-                path: '/',
+                path: '/projects/ozujsko',
             },
             {
-                image: 'eotg-screens.jpg',
+                image: 'eotg-3.jpg',
                 title: 'Eye on the goal',
                 description: 'School improvement system.',
-                path: '/',
+                path: '/projects/eye-on-the-goal',
             },
             {
                 image: 'fraud-official.jpg',
                 title: 'Mercury processing services',
                 description: 'Fraud management platform.',
-                path: '/',
+                path: '/projects/mercury-fraud',
             },
             {
                 image: 'vremenco.jpg',
                 title: 'vremen.co',
                 description: 'Task tracking tool.',
-                path: '/',
+                path: '/projects/vremenco',
             },
         ];
     }
