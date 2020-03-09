@@ -31,6 +31,9 @@
                 <a href="https://www.linkedin.com/in/dsvjetl" target="_blank" class="co-app-header__social-link">
                     <fa class="co-app-header__social-icon" :icon="['fab', 'linkedin']"></fa>
                 </a>
+                <a href="https://github.com/dsvjetl" target="_blank" class="co-app-header__social-link">
+                    <fa class="co-app-header__social-icon" :icon="['fab', 'github-square']"></fa>
+                </a>
             </div>
 
         </div>
@@ -182,6 +185,7 @@
         &__social-link {
             display: inline-block;
             height: 30px;
+            margin: 0 5px;
 
             &:hover {
                 cursor: pointer;
@@ -194,7 +198,7 @@
             transition: color .3s ease-in-out;
 
             &:hover {
-                color: $blue-linkedin;
+                color: $black;
             }
         }
     }

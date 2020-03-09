@@ -1,19 +1,21 @@
 <template>
     <div class="co-project-slider">
+
         <div class="swiper-container">
+
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+
+                <div
+                    class="swiper-slide"
+                    v-for="sliderImage in sliderImages"
+                    :key="sliderImage"
+                >
                     <div
                         class="co-project-slider__image"
-                        :style="{backgroundImage: 'url(' + require('@/assets/images/kuwait-3.jpg') + ')'}"
+                        :style="{backgroundImage: 'url(' + require('@/assets/images/' + sliderImage) + ')'}"
                     ></div>
                 </div>
-                <div class="swiper-slide">
-                    <div
-                        class="co-project-slider__image"
-                        :style="{backgroundImage: 'url(' + require('@/assets/images/kuwait-3.jpg') + ')'}"
-                    ></div>
-                </div>
+
             </div>
 
             <div class="swiper-button-next"></div>
@@ -25,7 +27,7 @@
 </template>
 
 <script lang="ts">
-    import {Vue, Component} from 'vue-property-decorator';
+    import {Vue, Component, Prop} from 'vue-property-decorator';
     // @ts-ignore
     import Swiper from 'swiper';
 
@@ -33,6 +35,8 @@
         name: 'ProjectSlider',
     })
     export default class ProjectSlider extends Vue {
+        @Prop({required: true}) public sliderImages!: string[];
+
         public mounted(): void {
             this.swiperManagement();
         }
@@ -56,7 +60,7 @@
     @import "~swiper/css/swiper.min.css";
 
     .co-project-slider {
-        height: 500px;
+        /*height: 500px;*/
         color: black;
         margin: 50px 0;
         padding: 0 percentage(4 / 24);
@@ -81,10 +85,13 @@
             background: no-repeat center center;
             background-size: cover;
             margin: auto;
-            height: calc(100% - 8px);
+            /*height: calc(100% - 8px);*/
+            height: 0;
             width: calc(80%);
+            padding-top: 56.25%;
             border: 4px solid $gray;
             transition: all .3s ease-in-out;
+            position: relative;
 
             &:hover {
                 border: 4px solid $orange;

@@ -102,6 +102,7 @@
                     'eotg-1.jpg',
                     'eotg-2.jpg',
                     'eotg-3.jpg',
+                    'eotg-4.jpg',
                 ],
             },
         ];

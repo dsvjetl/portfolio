@@ -26,5 +26,6 @@
         padding: 10px 5px;
         text-align: center;
         max-height: 39px;
+        color: $black;
     }
 </style>

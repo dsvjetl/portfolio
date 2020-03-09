@@ -2,27 +2,25 @@
     <div class="co-project-header">
         <div
             class="co-project-header__upper-section-layer"
-            :style="{backgroundImage: 'url(' + require('@/assets/images/kuwait-3.jpg') + ')'}"
+            :style="{backgroundImage: 'url(' + require('@/assets/images/' + projectInfo.images[0]) + ')'}"
         ></div>
-        <h1 class="co-project-header__title u-a1 --bold">{{projectName}}</h1>
+        <h1 class="co-project-header__title u-a1 --bold">{{projectInfo.title}}</h1>
+        <BackHomeButton class="co-project-header__back-button"/>
     </div>
 </template>
 
 <script lang="ts">
-    import {Vue, Component} from 'vue-property-decorator';
+    import {Vue, Component, Prop} from 'vue-property-decorator';
     import {projectRouteNames} from '@/export-helpers/projectRouteNames';
+    import BackHomeButton from '@/components/BackHomeButton.vue';
+    import {ProjectInfoInterface} from '@/interfaces/ProjectInfo';
 
     @Component({
         name: 'ProjectHeader',
+        components: {BackHomeButton},
     })
     export default class ProjectHeader extends Vue {
-        public get projectName(): string {
-            if (this.$route.params.projectName === projectRouteNames[0]) {
-                return 'Sheikh Abdullah Al Salem Cultural Centre';
-            } else {
-                return '';
-            }
-        }
+        @Prop({required: true}) public projectInfo!: ProjectInfoInterface;
     }
 </script>
 
@@ -50,6 +48,12 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        &__back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
     }
 </style>
