@@ -1,7 +1,9 @@
 <template>
     <div class="co-project-slider">
 
-        <div class="swiper-container">
+        <div
+            :class="[{'swiper-container': createSlider}]"
+        >
 
             <div class="swiper-wrapper">
 
@@ -18,10 +20,12 @@
 
             </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div v-if="createSlider">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
 
-            <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -39,6 +43,10 @@
 
         public mounted(): void {
             this.swiperManagement();
+        }
+
+        public get createSlider(): boolean {
+            return this.sliderImages.length > 1;
         }
 
         private swiperManagement() {

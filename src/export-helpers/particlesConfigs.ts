@@ -8,7 +8,7 @@ const headerPerticlesConfig = {
             },
         },
         color: {
-            value: '#fb8807',
+            value: '#f13c20',
         },
         shape: {
             type: 'circle',
@@ -48,7 +48,7 @@ const headerPerticlesConfig = {
         line_linked: {
             enable: true,
             distance: 150,
-            color: '#fb8807',
+            color: '#f13c20',
             opacity: 0.4,
             width: 2,
         },

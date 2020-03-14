@@ -23,7 +23,7 @@
                 data: this.ratio,
                 labels: ['skill', 'blank'],
                 backgroundColor: [
-                    '#fb8807',
+                    '#f13c20',
                     'transparent',
                 ],
             }];
@@ -44,7 +44,7 @@
                     elements: {
                         arc: {
                             borderWidth: 0,
-                            borderColor: '#fb8807',
+                            borderColor: '#f13c20',
                         },
                     },
                 },

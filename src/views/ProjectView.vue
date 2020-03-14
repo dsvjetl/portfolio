@@ -102,7 +102,63 @@
                     'eotg-1.jpg',
                     'eotg-2.jpg',
                     'eotg-3.jpg',
-                    'eotg-4.jpg',
+                ],
+            },
+            {
+                routeName: 'mercury-fraud',
+                title: 'Mercury processing services',
+                paragraphs: [
+                    `Improved, customized, and modernized already existing fraud management tool.`,
+                    `As analysts go through large volumes of information, we implemented elements
+                     like organized dashboards, data lists, auto queues, graphs, sound notifications
+                     and case indicators. Simple UI upgrades within these elements helped them streamline
+                     their work by allowing them to focus on the most critical pieces of information.`,
+                    `MPSI analysts perform a lot of small actions hundreds of times, so we focused on
+                     them to make them simpler, quicker to perform and overall more efficient.
+                     For example, analysts constantly copy and paste information, so we modified
+                     the UI to make that a single-click, 1-second action, instead of a series of
+                     clicks that takes 5 or more seconds.`,
+                ],
+                techs: [
+                    'HTML',
+                    'CSS (SCSS)',
+                    'JS',
+                    'TypeScript',
+                    'Vue.js',
+                    'Node.js',
+                    'Nest.js',
+                ],
+                images: [
+                    'fraud-1.jpg',
+                    'fraud-2.jpg',
+                    'fraud-3.jpg',
+                    'fraud-4.jpg',
+                    'fraud-5.jpg',
+                    'fraud-6.jpg',
+                    'fraud-7.jpg',
+                    'fraud-8.jpg',
+                ],
+            },
+            {
+                routeName: 'vremenco',
+                title: 'Vremenco',
+                paragraphs: [
+                    `Internal task and time tracking tool that uses every
+                     employee from Degordian, Bornfight and Mediatoolkit
+                     on a daily basis. It helps collecting data about how
+                     many hours and resources were spent on a specific tasks
+                     and projects.`,
+                ],
+                techs: [
+                    'HTML',
+                    'CSS (SCSS)',
+                    'JS',
+                    'Vue.js',
+                    'Node.js',
+                    'PHP',
+                ],
+                images: [
+                    'vremenco.jpg',
                 ],
             },
         ];

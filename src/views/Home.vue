@@ -8,6 +8,7 @@
         <Work/>
         <MediumPosts/>
         <AppFooter/>
+        <ScrollUpButton class="co-home__scroll-up-button"/>
     </div>
 </template>
 
@@ -22,12 +23,22 @@
     import Work from '@/components/Work.vue';
     import MediumPosts from '@/components/MediumPosts.vue';
     import AppFooter from '@/components/AppFooter.vue';
+    import ScrollUpButton from '@/components/ScrollUpButton.vue';
 
     @Component({
         name: 'Home',
         components: {
+            ScrollUpButton,
             AppFooter,
-            MediumPosts, Work, Skills, ParticlesBlock, EducationTimeline, MyResume, AboutMe, AppHeader},
+            MediumPosts,
+            Work,
+            Skills,
+            ParticlesBlock,
+            EducationTimeline,
+            MyResume,
+            AboutMe,
+            AppHeader,
+        },
     })
     export default class Home extends Vue {
 
@@ -36,6 +47,12 @@
 
 <style lang="scss" scoped>
     .co-home {
+
+        &__scroll-up-button {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
 
     }
 </style>

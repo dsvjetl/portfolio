@@ -70,6 +70,7 @@
 
         &__main-info {
             padding-bottom: 20px;
+            color: $gray-message;
         }
 
         &__link-wrapper {

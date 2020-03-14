@@ -31,7 +31,7 @@
                 <a href="https://www.linkedin.com/in/dsvjetl" target="_blank" class="co-app-header__social-link">
                     <fa class="co-app-header__social-icon" :icon="['fab', 'linkedin']"></fa>
                 </a>
-                <a href="https://github.com/dsvjetl" target="_blank" class="co-app-header__social-link">
+                <a href="https://github.com/dsvjetl/portfolio" target="_blank" class="co-app-header__social-link">
                     <fa class="co-app-header__social-icon" :icon="['fab', 'github-square']"></fa>
                 </a>
             </div>

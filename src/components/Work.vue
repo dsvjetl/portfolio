@@ -48,14 +48,14 @@
                 path: '/projects/eye-on-the-goal',
             },
             {
-                image: 'fraud-official.jpg',
+                image: 'fraud-5.jpg',
                 title: 'Mercury processing services',
                 description: 'Fraud management platform.',
                 path: '/projects/mercury-fraud',
             },
             {
                 image: 'vremenco.jpg',
-                title: 'vremen.co',
+                title: 'Vremenco',
                 description: 'Task tracking tool.',
                 path: '/projects/vremenco',
             },
@@ -77,7 +77,7 @@
 
         &__subtitle {
             font-weight: normal;
-            color: $gray-message;
+            color: $white;
             text-align: center;
             padding-bottom: 20px;
         }

@@ -21,6 +21,15 @@ import {headerPerticlesConfig} from '@/export-helpers/particlesConfigs';
 export default class ParticlesBlock extends Vue {
     public isParticlesExpanded: boolean = false;
 
+    public mounted() {
+        this.startParticles();
+    }
+
+    public beforeDestroy(): void {
+        // @ts-ignore
+        pJSDom = [];
+    }
+
     public toggleExpandParticlesElement() {
         this.isParticlesExpanded = !this.isParticlesExpanded;
         const body = document.querySelector('body') as HTMLElement;
@@ -44,10 +53,6 @@ export default class ParticlesBlock extends Vue {
     private startParticles() {
         // @ts-ignore
         particlesJS('particles-js', headerPerticlesConfig);
-    }
-
-    private mounted() {
-        this.startParticles();
     }
 }
 </script>
