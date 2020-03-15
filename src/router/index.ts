@@ -7,17 +7,17 @@ const routes = [
     {
         path: '*',
         name: 'NotFound',
-        component: () => import('./views/NotFoundView.vue'),
+        component: () => import('../views/NotFoundView.vue'),
     },
     {
         path: '/',
         name: 'Home',
-        component: () => import('./views/Home.vue'),
+        component: () => import('../views/Home.vue'),
     },
     {
         path: '/projects/:projectName',
         name: 'ProjectView',
-        component: () => import('./views/ProjectView.vue'),
+        component: () => import('../views/ProjectView.vue'),
     },
 ];
 
