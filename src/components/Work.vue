@@ -67,7 +67,7 @@
     .co-work {
         width: 100%;
         background-color: $orange;
-        padding: 50px percentage(4 / 24) 0;
+        padding: 50px percentage(4 / 24) 30px;
 
         @include media('<=desktop') {
             padding: 30px percentage(2 / 20) 0;
