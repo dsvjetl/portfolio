@@ -14,6 +14,11 @@
 <script lang="ts">
 import {Vue, Component} from 'vue-property-decorator';
 import {headerPerticlesConfig} from '@/export-helpers/particlesConfigs';
+// @ts-ignore
+import 'particles.js/particles';
+
+// @ts-ignore
+const particlesJS = window.particlesJS;
 
 @Component({
     name: 'ParticlesBlock',
@@ -51,7 +56,6 @@ export default class ParticlesBlock extends Vue {
     }
 
     private startParticles() {
-        // @ts-ignore
         particlesJS('particles-js', headerPerticlesConfig);
     }
 }
