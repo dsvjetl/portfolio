@@ -1,5 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import NotFoundView from '@/views/NotFoundView.vue';
+import Home from '@/views/Home.vue';
+import ProjectView from '@/views/ProjectView.vue';
 
 Vue.use(VueRouter);
 
@@ -7,17 +10,17 @@ const routes = [
     {
         path: '*',
         name: 'NotFound',
-        component: () => import('../views/NotFoundView.vue'),
+        component: NotFoundView,
     },
     {
         path: '/',
         name: 'Home',
-        component: () => import('../views/Home.vue'),
+        component: Home,
     },
     {
         path: '/projects/:projectName',
         name: 'ProjectView',
-        component: () => import('../views/ProjectView.vue'),
+        component: ProjectView,
     },
 ];
 
@@ -29,5 +32,3 @@ const router = new VueRouter({
         return {x: 0, y: 0};
     },
 });
-
-export default router;
