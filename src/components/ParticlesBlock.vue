@@ -59,6 +59,11 @@ export default class ParticlesBlock extends Vue {
 
 <style lang="scss" scoped>
     .co-particles-block {
+        width: 100%;
+
+        @include media('<=tablet') {
+            display: none;
+        }
 
         &__block {
             height: 200px;
@@ -78,6 +83,7 @@ export default class ParticlesBlock extends Vue {
                 top: 0;
                 left: 0;
                 background-color: rgba($black, .8);
+                border-bottom: none;
             }
         }
     }

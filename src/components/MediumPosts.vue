@@ -4,7 +4,7 @@
 
         <div class="co-medium-posts__wrapper">
             <MediumPost
-                class="co-medium-posts__post js-scrollreveal-bottom"
+                class="co-medium-posts__post js-scrollreveal-left"
                 v-for="mediumPost in mediumPosts"
                 :key="mediumPost.title"
                 :title="mediumPost.title"
@@ -46,6 +46,7 @@
 <style lang="scss" scoped>
     .co-medium-posts {
         padding: 80px 0 50px;
+        width: 100%;
 
         &__title {
             text-align: center;
@@ -56,11 +57,22 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding: 0 percentage(4 / 20);
+            padding: 0 percentage(4 / 24);
+
+            @include media('<=tablet') {
+                padding: 0 percentage(2 / 24);
+                display: block;
+                justify-content: initial;
+            }
         }
 
         &__post {
             width: 49%;
+
+            @include media('<=tablet') {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     }
 </style>

@@ -82,5 +82,19 @@
             color: $black;
             transform: translateY(50px);
         }
+
+        &__description, &__title {
+            @include media('<=tablet') {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        &__info-block {
+            @include media('<=tablet') {
+                opacity: .8;
+            }
+        }
+
     }
 </style>

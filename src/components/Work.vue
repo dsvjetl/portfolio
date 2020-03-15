@@ -65,9 +65,17 @@
 
 <style lang="scss" scoped>
     .co-work {
-        padding: 50px 0;
         width: 100%;
         background-color: $orange;
+        padding: 50px percentage(4 / 24) 0;
+
+        @include media('<=desktop') {
+            padding: 30px percentage(2 / 20) 0;
+        }
+
+        @include media('<=tablet') {
+            padding: 30px percentage(1 / 24) 0;
+        }
 
         &__title {
             text-align: center;
@@ -86,7 +94,6 @@
             display: flex;
             flex-wrap: wrap;
             position: relative;
-            padding: 30px percentage(4 / 20) 0;
             justify-content: space-evenly;
         }
 
@@ -95,6 +102,14 @@
             width: 30%;
             height: 150px;
             margin-bottom: 20px;
+
+            @include media('<=tablet') {
+                width: 48%;
+            }
+
+            @include media('<=550px') {
+                width: 100%;
+            }
         }
 
     }

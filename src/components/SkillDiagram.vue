@@ -80,6 +80,10 @@
         &__canvas {
             width: 200px;
             height: 200px;
+
+            @include media('<=tablet') {
+                width: 150px;
+            }
         }
     }
 </style>

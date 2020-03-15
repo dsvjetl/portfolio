@@ -68,6 +68,10 @@
         padding: 0 percentage(6 / 24) 50px;
         color: $black;
 
+        @include media('<=tablet') {
+            padding: 0 percentage(1 / 24) 50px;
+        }
+
         &__main-info {
             padding-bottom: 20px;
             color: $gray-message;

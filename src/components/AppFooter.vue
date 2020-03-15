@@ -27,5 +27,11 @@
         text-align: center;
         max-height: 39px;
         color: $black;
+
+        &__copyrights {
+            @include media('<=400px') {
+                font-size: 10px;
+            }
+        }
     }
 </style>

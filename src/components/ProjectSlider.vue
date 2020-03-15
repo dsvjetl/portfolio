@@ -68,10 +68,13 @@
     @import "~swiper/css/swiper.min.css";
 
     .co-project-slider {
-        /*height: 500px;*/
         color: black;
         margin: 50px 0;
         padding: 0 percentage(4 / 24);
+
+        @include media('<=tablet') {
+            padding: 0 percentage(1 / 24);
+        }
 
         .swiper-container {
             width: 100%;
@@ -87,6 +90,31 @@
 
         .swiper-button-next, .swiper-button-prev {
             color: $orange;
+            transform: translateY(-15px);
+
+            @include media('<=tablet') {
+                &:after {
+                    font-size: 30px;
+                }
+            }
+
+            @include media('<=450px') {
+                &:after {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .swiper-button-next {
+            @include media('<=520px') {
+                transform: translateX(15px) translateY(-15px);
+            }
+        }
+
+        .swiper-button-prev {
+            @include media('<=520px') {
+                transform: translateX(-15px) translateY(-15px);
+            }
         }
 
         &__image {

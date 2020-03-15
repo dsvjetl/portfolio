@@ -74,6 +74,10 @@
         &__timeline-block {
             display: flex;
             padding: 0 percentage(4 / 24);
+
+            @include media('<=860px') {
+                padding: 0 percentage(1 / 24);
+            }
         }
 
         &__timeline-block-left {

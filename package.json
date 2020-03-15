@@ -18,6 +18,7 @@
         "chart.js": "^2.9.3",
         "core-js": "^3.6.4",
         "gsap": "^3.2.0",
+        "include-media": "^1.4.9",
         "particles.js": "^2.0.0",
         "scrollreveal": "^4.0.5",
         "swiper": "^5.3.6",

@@ -60,6 +60,8 @@
 <style lang="scss" scoped>
     .co-skills {
         padding: 80px 0 50px;
+        width: 100%;
+        overflow: hidden;
 
         &__title {
             text-align: center;
@@ -71,11 +73,21 @@
             flex-wrap: wrap;
             padding: 40px percentage(4 / 24);
             justify-content: center;
+            text-align: center;
+
+            @include media('<=tablet') {
+                padding: 40px percentage(1 / 24);
+            }
         }
 
         &__diagram-wrapper {
             width: 25%;
             margin-bottom: 50px;
+            padding: 5px;
+
+            @include media('<=tablet') {
+                width: 33%;
+            }
         }
 
     }

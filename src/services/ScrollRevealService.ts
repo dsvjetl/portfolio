@@ -22,7 +22,7 @@ export class ScrollRevealService {
         duration: 550,
         easing: 'ease-in-out',
         scale: 0.85,
-        mobile: true,
-        interval: 350,
+        mobile: false,
+        interval: 100,
     };
 }

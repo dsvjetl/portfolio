@@ -106,6 +106,7 @@
         text-align: center;
         display: flex;
         padding: 50px 0 50px;
+        width: 100%;
 
         &__wrapper {
             margin: auto;
@@ -120,6 +121,11 @@
             border: 1px solid $white;
             overflow: hidden;
             position: relative;
+
+            @include media('<=tablet') {
+                width: 200px;
+                height: 200px;
+            }
         }
 
         &__profile-image {
@@ -158,16 +164,23 @@
         &__title {
             font-family: 'Kaushan Script', sans-serif;
             color: $white;
-            padding-bottom: 120px;
             transition: transform .3s ease-in-out;
 
             &.rotate {
                 transform: rotate(-10deg);
             }
+
+            @include media('<=tablet') {
+                font-size: 30px;
+            }
+
+            @include media('<=570px') {
+                font-size: 22px;
+            }
         }
 
         &__info {
-            padding-bottom: 30px;
+            padding: 120px 30px 80px;
         }
 
         &__blinker {

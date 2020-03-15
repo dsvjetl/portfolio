@@ -35,6 +35,11 @@
         &__title {
             text-align: center;
             padding-bottom: 5px;
+
+            @include media('<=tablet') {
+                padding-bottom: 0;
+                font-size: 14px;
+            }
         }
 
         &__percentage {

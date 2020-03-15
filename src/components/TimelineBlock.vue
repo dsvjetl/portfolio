@@ -16,7 +16,8 @@
                     :content="companyName"
                     :href="companyHref"
                 />
-            </span>: {{dateString}}
+            </span>
+            <span class="co-timeline-block__date">: {{dateString}}</span>
         </p>
     </div>
 </template>
@@ -57,6 +58,10 @@
         }
 
         &__company-name {
+            color: $gray-message;
+        }
+
+        &__date {
             color: $gray-message;
         }
 
