@@ -24,18 +24,24 @@
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="4"
+                :title="'TS'"
+                :ratio="[90, 10]"
+            />
+            <SkillDiagramWrapper
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
+                :id="5"
                 :title="'Vue.js'"
                 :ratio="[98, 2]"
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
-                :id="5"
+                :id="6"
                 :title="'Node.js'"
                 :ratio="[84, 16]"
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
-                :id="6"
+                :id="7"
                 :title="'PHP'"
                 :ratio="[64, 36]"
             />
