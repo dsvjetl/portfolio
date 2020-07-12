@@ -23,6 +23,7 @@
                     :companyHref="'https://www.bornfight.com'"
                     :dateString="'12/18 - 02/20'"
                 />
+                <div class="co-resume-timeline__empty-space"></div>
             </div>
 
             <div class="co-resume-timeline__timeline-block-right">
@@ -34,6 +35,15 @@
                     :companyHref="'https://www.degordian.com'"
                     :dateString="'01/18 - 12/18'"
                     :side="'right'"
+                />
+                <div class="co-resume-timeline__empty-space"></div>
+                <TimelineBlock
+                  class="js-scrollreveal-bottom"
+                  :title="'Software Developer'"
+                  :companyName="'MI Digital'"
+                  :companyHref="'https://midigital.eu'"
+                  :dateString="'04/20 - Current'"
+                  :side="'right'"
                 />
             </div>
 
