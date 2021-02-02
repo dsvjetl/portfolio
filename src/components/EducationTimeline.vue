@@ -8,18 +8,19 @@
         <div class="co-education-timeline__timeline-block">
 
             <div class="co-education-timeline__timeline-block-left">
-                <TimelineBlock
-                  class="js-scrollreveal-bottom"
-                  :title="'Multimedia Computer Engineering'"
-                  :companyName="'Algebra'"
-                  :companyHref="'https://www.algebra.hr/visoko-uciliste'"
-                  :dateString="'09/13 - 04/17'"
-                  :faIcon="['fas', 'graduation-cap']"
-                />
+                <div class="co-resume-timeline__empty-space"></div>
             </div>
 
             <div class="co-education-timeline__timeline-block-right">
-
+                <TimelineBlock
+                    class="js-scrollreveal-bottom"
+                    :title="'Multimedia Computer Engineering'"
+                    :companyName="'Algebra'"
+                    :companyHref="'https://www.algebra.hr/visoko-uciliste'"
+                    :dateString="'09/13 - 04/17'"
+                    :faIcon="['fas', 'graduation-cap']"
+                    :side="'right'"
+                />
             </div>
 
         </div>
