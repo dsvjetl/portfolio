@@ -1,16 +1,16 @@
 <template>
-    <div class="co-my-resume">
+<div class="co-my-resume">
 
-        <h3 class="co-my-resume__title u-a2 u-a2 --bold">_Resume</h3>
+    <h3 class="co-my-resume__title u-a2 u-a2 --bold">_Resume</h3>
 
-        <div class="co-my-resume__timelines-wrapper">
-            <ResumeTimeline/>
-            <EducationTimeline/>
-        </div>
-
-        <MobileResume/>
-
+    <div class="co-my-resume__timelines-wrapper">
+        <ResumeTimeline/>
+        <EducationTimeline/>
     </div>
+
+    <MobileResume/>
+
+</div>
 </template>
 
 <script lang="ts">
@@ -29,19 +29,19 @@
 </script>
 
 <style lang="scss" scoped>
-    .co-my-resume {
-        width: 100%;
+.co-my-resume {
+    width: 100%;
 
-        &__timelines-wrapper {
-            @include media('<=tablet') {
-                display: none;
-            }
+    &__timelines-wrapper {
+        @include media('<=tablet') {
+            display: none;
         }
-
-        &__title {
-            text-align: center;
-            padding-bottom: 50px;
-        }
-
     }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+}
 </style>
