@@ -59,6 +59,12 @@
                 description: 'Task tracking tool.',
                 path: '/projects/vremenco',
             },
+            {
+                image: 'vremenco.jpg',
+                title: 'Weylchem',
+                description: 'Platform for international chemical investors group',
+                path: '/projects/weylchem',
+            },
         ];
     }
 </script>
