@@ -1,16 +1,16 @@
 <template>
-    <div class="co-project-view">
-        <ProjectHeader
-            :projectInfo="currentProjectInfo"
-        />
-        <ProjectSlider
-            :sliderImages="currentProjectInfo.images"
-        />
-        <ProjectInfo
-            :projectInfo="currentProjectInfo"
-        />
-        <AppFooter/>
-    </div>
+<div class="co-project-view">
+    <ProjectHeader
+        :projectInfo="currentProjectInfo"
+    />
+    <ProjectSlider
+        :sliderImages="currentProjectInfo.images"
+    />
+    <ProjectInfo
+        :projectInfo="currentProjectInfo"
+    />
+    <AppFooter/>
+</div>
 </template>
 
 <script lang="ts">
@@ -161,6 +161,34 @@
                     'vremenco.jpg',
                 ],
             },
+            {
+                routeName: 'weylchem',
+                title: 'WeylChem',
+                paragraphs: [
+                    `The WeylChem Group of Companies was founded in 2005 as the fine chemicals
+                    Platform of the International Chemical Investors Group (ICIG, ic-investors.com).
+                    With a variety of companies in Europe and the USA, the Weylchem Group provides
+                     a comprehensive offering of products and services to its customers.`,
+                ],
+                linkInfo: {
+                    content: 'WeylChem',
+                    link: 'https://www.weylchem.com',
+                },
+                techs: [
+                    'HTML',
+                    'CSS (SCSS)',
+                    'JS',
+                    'TS',
+                    'Angular(11)',
+                    'Drupal',
+                    'PHP',
+                ],
+                images: [
+                    'weylchem-1.png',
+                    'weylchem-2.png',
+                    'weylchem-3.png',
+                ],
+            },
         ];
 
         public get projectNameParam(): string {
@@ -188,7 +216,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .co-project-view {
-        color: $white;
-    }
+.co-project-view {
+    color: $white;
+}
 </style>

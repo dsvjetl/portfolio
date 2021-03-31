@@ -4,4 +4,5 @@ export const projectRouteNames = [
     'eye-on-the-goal',
     'mercury-fraud',
     'vremenco',
+    'weylchem',
 ];
