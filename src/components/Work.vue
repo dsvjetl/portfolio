@@ -60,7 +60,7 @@
                 path: '/projects/vremenco',
             },
             {
-                image: 'vremenco.jpg',
+                image: 'weylchem.png',
                 title: 'Weylchem',
                 description: 'Platform for international chemical investors group',
                 path: '/projects/weylchem',
