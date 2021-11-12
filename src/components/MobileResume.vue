@@ -69,6 +69,18 @@
                     linkHref: `https://www.bornfight.com`,
                     date: `12/18 - 02/20`,
                 },
+                {
+                    title: `Software Developer`,
+                    linkContent: `MI Digital`,
+                    linkHref: `https://www.devot.team`,
+                    date: `04/20 - 08/20`,
+                },
+                {
+                    title: `Angular Developer`,
+                    linkContent: `UHP Digital`,
+                    linkHref: `https://www.uhp.digital`,
+                    date: `09/20 - 11/21`,
+                },
             ],
             education: [
                 {

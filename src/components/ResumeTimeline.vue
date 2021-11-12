@@ -29,7 +29,7 @@
                 :title="'Angular Developer'"
                 :companyName="'UHP.DIGITAL'"
                 :companyHref="'https://www.uhp.digital'"
-                :dateString="'09/20 - current'"
+                :dateString="'09/20 - 11/21'"
             />
         </div>
 
