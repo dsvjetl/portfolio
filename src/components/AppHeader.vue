@@ -55,10 +55,9 @@
         public blinkerShow: boolean = false;
         public blinkerToggle: boolean = false;
         public rotateTitle: boolean = false;
-        private titleForTimeout = `Front-end / JavaScript / Vue.js Developer`;
+        private titleForTimeout = `JavaScript Developer (Vue | React | Angular)`;
 
         public titleTimeoutSet() {
-            const titleForTimeoutLength: number = this.titleForTimeout.length;
             let index: number = 0;
 
             const interval = setInterval(() => {
@@ -71,7 +70,7 @@
                     this.rotateTitle = true;
                     this.startBlinkerToggle();
                 }
-            }, 100);
+            }, 85);
         }
 
         private animateHeaderDom() {
@@ -164,7 +163,7 @@
         &__title {
             font-family: 'Kaushan Script', sans-serif;
             color: $white;
-            transition: transform .3s ease-in-out;
+            transition: all .3s ease-in-out;
 
             &.rotate {
                 transform: rotate(-10deg);

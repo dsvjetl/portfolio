@@ -31,6 +31,7 @@
 <style lang="scss" scoped>
 .co-my-resume {
     width: 100%;
+    padding: 0 0 50px 0;
 
     &__timelines-wrapper {
         @include media('<=tablet') {
