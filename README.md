@@ -1,5 +1,7 @@
 # portfolio
 
+## Node version: `v12.22.12`
+
 ## Project setup
 ```
 npm install

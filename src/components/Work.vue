@@ -65,6 +65,12 @@
                 description: 'Platform for international chemical investors group',
                 path: '/projects/weylchem',
             },
+            {
+                image: 'takamol-booth.jpg',
+                title: 'Takamol Holding',
+                description: 'Leading socio-economic transformation for individuals, society, and the economy.',
+                path: '/projects/takamol',
+            },
         ];
     }
 </script>

@@ -52,6 +52,15 @@
                 :dateString="'04/20 - 08/20'"
                 :side="'right'"
             />
+            <div class="co-resume-timeline__empty-space"></div>
+            <TimelineBlock
+                class="js-scrollreveal-bottom"
+                :title="'Javascript Developer'"
+                :companyName="'Q agency'"
+                :companyHref="'https://q.agency'"
+                :dateString="'01/22 - current'"
+                :side="'right'"
+            />
         </div>
 
     </div>
