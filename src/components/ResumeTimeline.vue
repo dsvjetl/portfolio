@@ -27,7 +27,7 @@
             <TimelineBlock
                 class="js-scrollreveal-left"
                 :title="'Angular Developer'"
-                :companyName="'UHP.DIGITAL'"
+                :companyName="'UHP Digital'"
                 :companyHref="'https://www.uhp.digital'"
                 :dateString="'09/20 - 11/21'"
             />
