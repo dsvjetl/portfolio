@@ -81,6 +81,12 @@
                     linkHref: `https://www.uhp.digital`,
                     date: `09/20 - 11/21`,
                 },
+                {
+                    title: `Javascript Developer`,
+                    linkContent: `Q Agency`,
+                    linkHref: `https://q.agency/`,
+                    date: `01/22 - current`,
+                },
             ],
             education: [
                 {
