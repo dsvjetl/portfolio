@@ -83,6 +83,10 @@ export default class AboutMe extends Vue {
     background-color: $white;
     width: 100%;
 
+    @include media('<=tablet') {
+        padding: 30px 0 40px;
+    }
+
     &__title {
         text-align: center;
     }
@@ -98,6 +102,7 @@ export default class AboutMe extends Vue {
 
         @include media('<=tablet') {
             padding: 0 percentage(1 / 24);
+            margin: 20px 0 0;
         }
     }
 

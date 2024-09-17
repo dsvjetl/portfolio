@@ -48,9 +48,17 @@
         padding: 80px 0 50px;
         width: 100%;
 
+        @include media('<=tablet') {
+            padding: 30px 0 50px;
+        }
+
         &__title {
             text-align: center;
             padding-bottom: 50px;
+
+            @include media('<=tablet') {
+                padding-bottom: 20px;
+            }
         }
 
         &__wrapper {
