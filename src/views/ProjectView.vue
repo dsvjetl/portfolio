@@ -32,6 +32,7 @@ export default class ProjectView extends Vue {
         {
             routeName: 'al-salem-cultural-centre',
             title: 'Sheikh Abdullah Al Salem Cultural Centre',
+            company: 'Made with Bornfight team',
             paragraphs: [
                 'Sheikh Abdullah Al Salem Cultural Centre is the biggest cultural centre in the world. It contains 1,100 exhibits in six different buildings - Science Museum, Museum of Islamic History, Space Museum, Fine Arts Centre and Theatre.',
                 'I was a part of the team in charge for developing 33 interactive applications as a role of Front-end JavaScript developer.',
@@ -59,6 +60,7 @@ export default class ProjectView extends Vue {
         {
             routeName: 'ozujsko',
             title: 'Ožujsko',
+            company: 'Made with Bornfight team',
             paragraphs: [
                 'Ožujsko is a brand of beer which is produced by Zagrebačka pivovara, the biggest brewery in the Croatia. It is also the most popular and the leading beer brand in terms of sales in Croatia.',
             ],
@@ -82,6 +84,7 @@ export default class ProjectView extends Vue {
         {
             routeName: 'eye-on-the-goal',
             title: 'Eye on the goal',
+            company: 'Made with Bornfight team',
             paragraphs: [
                 `The platform for teachers and educators to help them through the key components
                      of their professional work like strategic planning within the school district level.
@@ -107,6 +110,7 @@ export default class ProjectView extends Vue {
         {
             routeName: 'mercury-fraud',
             title: 'Mercury processing services',
+            company: 'Made with Bornfight team',
             paragraphs: [
                 `Improved, customized, and modernized already existing fraud management tool.`,
                 `As analysts go through large volumes of information, we implemented elements
@@ -142,6 +146,7 @@ export default class ProjectView extends Vue {
         {
             routeName: 'vremenco',
             title: 'Vremenco',
+            company: 'Made with Degordian team',
             paragraphs: [
                 `Internal task and time tracking tool that uses every
                      employee from Degordian, Bornfight and Mediatoolkit
@@ -164,6 +169,7 @@ export default class ProjectView extends Vue {
         {
             routeName: 'weylchem',
             title: 'WeylChem',
+            company: 'Made with UHP team',
             paragraphs: [
                 `The WeylChem Group of Companies was founded in 2005 as the fine chemicals
                     Platform of the International Chemical Investors Group (ICIG, ic-investors.com).
@@ -192,6 +198,7 @@ export default class ProjectView extends Vue {
         {
             routeName: 'takamol',
             title: 'Takamol',
+            company: 'Made with Q Agency team',
             paragraphs: [
                 `Leading socio-economic transformation by creating unique solutions that meet the diverse needs of
                  individuals and society, fostering opportunities for all, contributing to a prosperous economy, and

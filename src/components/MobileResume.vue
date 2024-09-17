@@ -82,7 +82,7 @@
                     date: `09/20 - 11/21`,
                 },
                 {
-                    title: `Javascript Developer`,
+                    title: `React & Vue Engineer`,
                     linkContent: `Q Agency`,
                     linkHref: `https://q.agency/`,
                     date: `01/22 - current`,
