@@ -11,39 +11,33 @@
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
-                :id="2"
-                :title="'CSS'"
-                :ratio="[89, 11]"
-            />
-            <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="3"
                 :title="'JS'"
-                :ratio="[95, 5]"
+                :ratio="[97, 3]"
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="4"
                 :title="'TS'"
-                :ratio="[90, 10]"
+                :ratio="[94, 6]"
+            />
+            <SkillDiagramWrapper
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
+                :id="2"
+                :title="'CSS'"
+                :ratio="[91, 9]"
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="5"
                 :title="'Vue.js'"
-                :ratio="[98, 2]"
+                :ratio="[95, 5]"
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
                 :id="6"
-                :title="'Node.js'"
-                :ratio="[84, 16]"
-            />
-            <SkillDiagramWrapper
-                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
-                :id="7"
-                :title="'PHP'"
-                :ratio="[64, 36]"
+                :title="'React.js'"
+                :ratio="[93, 7]"
             />
         </div>
     </div>
@@ -65,9 +59,13 @@
 
 <style lang="scss" scoped>
     .co-skills {
-        padding: 80px 0 50px;
+        padding: 50px 0 0;
         width: 100%;
         overflow: hidden;
+
+        @include media('<=tablet') {
+            padding: 20px 0 0;
+        }
 
         &__title {
             text-align: center;

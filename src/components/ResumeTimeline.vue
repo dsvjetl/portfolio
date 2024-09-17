@@ -55,7 +55,7 @@
             <div class="co-resume-timeline__empty-space"></div>
             <TimelineBlock
                 class="js-scrollreveal-bottom"
-                :title="'Javascript Developer'"
+                :title="'React & Vue Engineer'"
                 :companyName="'Q agency'"
                 :companyHref="'https://q.agency'"
                 :dateString="'01/22 - current'"

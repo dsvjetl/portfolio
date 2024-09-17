@@ -138,12 +138,7 @@
             position: relative;
 
             &:hover {
-                transform: scale(1.2) translateX(8%);
-
-                &:after {
-                    top: 0;
-                    opacity: .1;
-                }
+                transform: scale(1.1) translateY(3%);
             }
 
             &:after {

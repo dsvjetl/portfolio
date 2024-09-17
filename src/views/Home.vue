@@ -3,6 +3,7 @@
         <AppHeader/>
         <AboutMe/>
         <MyResume/>
+        <Skills/>
         <Work/>
         <MediumPosts/>
         <AppFooter/>
@@ -16,6 +17,7 @@
     import AboutMe from '@/components/AboutMe.vue';
     import MyResume from '@/components/MyResume.vue';
     import EducationTimeline from '@/components/EducationTimeline.vue';
+    import Skills from '@/components/Skills.vue';
     import Work from '@/components/Work.vue';
     import MediumPosts from '@/components/MediumPosts.vue';
     import AppFooter from '@/components/AppFooter.vue';
@@ -28,6 +30,7 @@
             AppFooter,
             MediumPosts,
             Work,
+            Skills,
             EducationTimeline,
             MyResume,
             AboutMe,

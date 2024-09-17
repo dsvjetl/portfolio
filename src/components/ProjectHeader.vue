@@ -6,12 +6,12 @@
         ></div>
         <h1 class="co-project-header__title u-a1 --bold">{{projectInfo.title}}</h1>
         <BackHomeButton class="co-project-header__back-button"/>
+        <h3 class="co-project-header__company u-a5">{{projectInfo.company}}</h3>
     </div>
 </template>
 
 <script lang="ts">
     import {Vue, Component, Prop} from 'vue-property-decorator';
-    import {projectRouteNames} from '@/export-helpers/projectRouteNames';
     import BackHomeButton from '@/components/BackHomeButton.vue';
     import {ProjectInfoInterface} from '@/interfaces/ProjectInfo';
 
@@ -30,6 +30,7 @@
         position: relative;
         overflow: hidden;
         width: 100%;
+        display: flex;
 
         @include media('<=tablet') {
             height: 350px;
@@ -64,6 +65,15 @@
             @include media('<=mobile') {
                 font-size: 20px;
             }
+        }
+
+        &__company {
+            text-align: center;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: normal;
         }
 
         &__back-button {
