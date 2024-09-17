@@ -33,6 +33,10 @@
     width: 100%;
     padding: 0 0 50px 0;
 
+    @include media('<=tablet') {
+        padding: 0 0 20px 0;
+    }
+
     &__timelines-wrapper {
         @include media('<=tablet') {
             display: none;
@@ -42,6 +46,10 @@
     &__title {
         text-align: center;
         padding-bottom: 50px;
+
+        @include media('<=tablet') {
+            padding-bottom: 30px;
+        }
     }
 
 }

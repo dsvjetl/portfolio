@@ -92,7 +92,11 @@
         &__title {
             text-align: center;
             color: $white;
-            padding-bottom: 10px;
+            padding-bottom: 50px;
+
+            @include media('<=tablet') {
+                padding-bottom: 20px;
+            }
         }
 
         &__subtitle {
