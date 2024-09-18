@@ -11,19 +11,19 @@
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
-                :id="3"
+                :id="2"
                 :title="'JS'"
                 :ratio="[97, 3]"
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
-                :id="4"
+                :id="3"
                 :title="'TS'"
                 :ratio="[94, 6]"
             />
             <SkillDiagramWrapper
                 class="co-skills__diagram-wrapper js-scrollreveal-bottom"
-                :id="2"
+                :id="4"
                 :title="'CSS'"
                 :ratio="[91, 9]"
             />
@@ -38,6 +38,12 @@
                 :id="6"
                 :title="'React.js'"
                 :ratio="[93, 7]"
+            />
+            <SkillDiagramWrapper
+                class="co-skills__diagram-wrapper js-scrollreveal-bottom"
+                :id="7"
+                :title="'Angular'"
+                :ratio="[89, 11]"
             />
         </div>
     </div>
