@@ -5,5 +5,5 @@ export const projectRouteNames = [
     'mercury-fraud',
     'vremenco',
     'weylchem',
-    'takamol',
+    'nda-restricted',
 ];
