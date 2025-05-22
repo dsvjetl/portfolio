@@ -5,6 +5,7 @@
         />
         <ProjectSlider
             :sliderImages="currentProjectInfo.images"
+            :projectName="projectNameParam"
         />
         <ProjectInfo
             :projectInfo="currentProjectInfo"
@@ -196,28 +197,25 @@ export default class ProjectView extends Vue {
             ],
         },
         {
-            routeName: 'takamol',
-            title: 'Takamol',
+            routeName: 'nda-restricted',
+            title: 'NDA Restricted',
             company: 'Made with Q Agency team',
             paragraphs: [
                 `Leading socio-economic transformation by creating unique solutions that meet the diverse needs of
                  individuals and society, fostering opportunities for all, contributing to a prosperous economy, and
                  achieving futuristic goals.`,
+                `Platform for managing your businesses, developing your career
+                and handling all official matters easily and conveniently online 24/7.`,
             ],
-            linkInfo: {
-                content: 'Takamol',
-                link: 'https://takamolholding.com/en/',
-            },
             techs: [
                 'Vue.js (2)',
                 'React.js',
                 'TS',
-                'Custom Design System and React Starter Kit',
                 'PHP',
             ],
             images: [
-                'takamol-booth.jpg',
-                'takamol-holding.webp',
+                'nda-restricted-booth.jpg',
+                'nda-restricted-holding.webp',
             ],
         },
     ];

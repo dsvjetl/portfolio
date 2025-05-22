@@ -3,7 +3,7 @@
         <div
             class="co-project-header__upper-section-layer"
             :style="{backgroundImage: 'url(' + require('@/assets/images/' + projectInfo.images[0]) + ')'}"
-        ></div>
+        />
         <h1 class="co-project-header__title u-a1 --bold">{{projectInfo.title}}</h1>
         <BackHomeButton class="co-project-header__back-button"/>
         <h3 class="co-project-header__company u-a5">{{projectInfo.company}}</h3>

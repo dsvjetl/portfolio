@@ -66,10 +66,10 @@
                 path: '/projects/weylchem',
             },
             {
-                image: 'takamol-booth.jpg',
-                title: 'Takamol Holding',
+                image: 'nda-restricted-booth.jpg',
+                title: 'NDA Restricted',
                 description: 'Leading socio-economic transformation for individuals, society, and the economy.',
-                path: '/projects/takamol',
+                path: '/projects/nda-restricted',
             },
         ];
     }
